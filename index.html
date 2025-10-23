@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Rock Paper Scissors</h1>
+        
+        <div class="score-board">
+            <div class="player-box">
+                <div class="player-label">You</div>
+                <div class="score" id="player-score">0</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="computer-box">
+                <div class="computer-label">Computer</div>
+                <div class="score" id="computer-score">0</div>
+            </div>
+        </div>
+
+        <div class="round-info" id="round-info">Round 0/5</div>
+
+        <div class="choices">
+            <div class="choice" data-choice="rock">
+                <img src="stone.png" alt="">
+                <div class="choice-label">Rock</div>
+            </div>
+            <div class="choice" data-choice="paper">
+                <img style="width: 60px;" src="paper.png" alt="">
+                <div style="margin-top: 10px;" class="choice-label">Paper</div>
+            </div>
+            <div class="choice" data-choice="scissors">
+                <img style="filter: invert(100%); width: 80px;" src="scissors.png" alt="">
+                <div class="choice-label">Scissors</div>
+            </div>
+        </div>
+
+        <div class="game-status">
+            <div class="player-selection">
+                <div class="selection-label">Your choice</div>
+                <div class="selection-box">
+                    <span id="player-choice" class="question-mark">?</span>
+                </div>
+            </div>
+            <div class="computer-selection">
+                <div class="selection-label">Computer's choice</div>
+                <div class="selection-box">
+                    <span id="computer-choice" class="question-mark">?</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message" id="message">Make your choice!</div>
+        
+        <button class="reset-btn" id="reset">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

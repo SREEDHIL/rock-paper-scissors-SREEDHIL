@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1f2e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+    background-color: #262b3c;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+}
+
+.title {
+    color: #55c2da;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.player-box, .computer-box {
+    background-color: #1a1f2e;
+    padding: 20px 40px;
+    border-radius: 15px;
+    width: 160px;
+}
+
+.vs {
+    background-color: #ff4757;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.player-label, .computer-label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 48px;
+    color: #4a90e2;
+}
+
+.round-info {
+    color: #4a90e2;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.choice {
+    background-color: #1a1f2e;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+.choice-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.choice-label {
+    font-size: 16px;
+}
+
+.game-status {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.player-selection, .computer-selection {
+    text-align: center;
+}
+
+.selection-label {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.selection-box {
+    background-color: #1a1f2e;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.selection-box .question-mark {
+    font-size: 36px;
+    color: #4a90e2;
+}
+
+.message {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.reset-btn {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.reset-btn:hover {
+    background-color: #ff6b81;
+}
+
+img{
+    width: 100px;
+}
